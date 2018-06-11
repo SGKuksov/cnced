@@ -57,19 +57,13 @@ let images = [
 
 // Cписок обрабатываемых файлов в указанной последовательности
 let jsList = [
-  dirs.source + '/js/jquery.min.js',
-  dirs.source + '/js/jquery-migrate.min.js',
+  'node_modules/jquery/dist/jquery.min.js',
+  // dirs.source + '/js/jquery-migrate.min.js',
   // dirs.source + '/js/jquery-ui.min.js',
-  dirs.source + '/js/bootstrap.bundle.min.js',
-  dirs.source + '/js/svg4everybody.min.js',
-  dirs.source + '/js/ofi.min.js',
-  dirs.source + '/js/pushy.min.js',
-  dirs.source + '/js/slick.min.js',
-  dirs.source + '/js/jquery.barrating.min.js',
-  dirs.source + '/js/truncate.js',
-  dirs.source + '/js/auto-search.js',
-  dirs.source + '/js/map.js',
-  dirs.source + '/js/data.json',
+  'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+  'node_modules/svg4everybody/dist/svg4everybody.min.js',
+  'node_modules/object-fit-images/dist/ofi.min.js',
+  'node_modules/slick-carousel/slick/slick.min.js',
   dirs.source + '/js/script.js'
 ];
 
