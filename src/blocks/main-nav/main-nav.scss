@@ -1,3 +1,22 @@
 .main-nav {
 
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    list-style: none;
+    margin-right: 20px;
+  }
+
+  &__link {
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 44px;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
 }

@@ -1,65 +1,37 @@
-// pushy
-html, body{
-  overflow-x: hidden;
-  height: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-*,
-*:after,
-*:before {
-  outline: none;
-}
-
 html {
-  min-height: 100%;
+  box-sizing: border-box;
+  font-family: $font-family;
+  font-size: $font-size;
+  color: $text-color;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 body {
-  background-color: #f0f0f0;
-  color: $light-gray;
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 14px;
-
-  display: flex;
-  flex-direction: column;
-}
-
-a {
-  text-decoration: none;
-  color: $light-gray;
-  font-weight: normal;
-
-  &:hover {
-    text-decoration: none;
-    color: $light-gray;
-    font-weight: normal;
-  }
+  min-width: 320px;
+  margin: 0;
+  background-color: $bg;
+  height: 2000px;
 }
 
 ul {
+  margin: 0;
   padding: 0;
-  margin-bottom: 0;
-  list-style: none;
 }
 
-h1, h2, h3, h4 ,h5, h6 {
-  font-weight: normal;
+.container {
+  // width: 1260px;
+  // margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+  // border: 1px solid #000;
+  height: 100vh;
 }
 
-select {
-  width: auto !important;
-}
-
-img {
-  width: 100%; /* Ширина изображений */
-  height: 100%; /* Высота изображении */
-  object-fit: cover; /* Вписываем фотографию в область */
-}
-
-button {
-  border: none
+svg {
+  width: 10px;
+  height: 10px;
+  display: none;
 }

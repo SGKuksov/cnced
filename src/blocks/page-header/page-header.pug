@@ -1,5 +1,20 @@
 mixin page-header()
 
-  header.page-header
-    .page-header__container
-      
+  header.page-header.red-circle
+    .page-header__container.container
+      .page-header__top-nav.row
+        .page-header__logo.col-2
+          img(src="img/cnced-logo-black.png", alt="cnced")
+
+        +main-nav()
+
+        .col-4.page-header__contacts
+          a.page-header__phone(href="tel:+78123099804") +7 (812) 309-98-04
+          button.btn.page-header__callback Перезвонить?
+
+        a.col-1.page-header__compare(href="#")
+          svg
+
+        a.col-3.page-header__order(href="#")
+          svg
+          | Оформить заказ
