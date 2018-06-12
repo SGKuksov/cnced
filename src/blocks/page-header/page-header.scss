@@ -5,9 +5,12 @@
 
   }
 
-  &__top-nav {
-    display: flex;
-    align-items: flex-start;
+  &__top-head {
+
+  }
+
+  &__bottom-head {
+    padding-top: 15px;
   }
 
   &__contacts {
@@ -57,6 +60,44 @@
 
   &__logo img {
     object-fit: contain;
+  }
+
+  &__category-list {
+    display: flex;
+  }
+
+  &__category-item {
+    list-style: none;
+    margin-right: 35px;
+  }
+
+  &__category-link {
+    color: #ffffff;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+
+  &__search {
+
+    & button {
+      width: 20px;
+      height: 20px;
+      // border: none;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    color: #232323;
+    font-size: 1.8rem;
   }
 
   &.red-circle {
