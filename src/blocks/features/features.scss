@@ -11,6 +11,18 @@
     padding-bottom: 50px;
     background-color: transparent;
 
+    &.active {
+      background-color: #484848;
+      box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.04);
+
+      & .features__item-title {
+        color: #ffffff;
+      }
+      & .features__item-text {
+        color: #ffffff;
+      }
+    }
+
     &:hover {
       background-color: #484848;
       box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.04);
@@ -23,13 +35,10 @@
     }
   }
   &__item-icon {
-    height: 24px;
-    width: 42px;
-    background-color: $red;
     display: inline-block;
   }
   &__item-title {
-    margin-top: 35px;
+    margin-top: 30px;
     font-size: 1.8rem;
     color: #484848;
     font-weight: 600;

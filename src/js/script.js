@@ -12,4 +12,9 @@ $(document).ready(function() {
     $(this).parent().toggleClass("active");
   });
 
+  $(".features__item").mouseover(function() {
+    $(".features__item").removeClass("active");
+    $(this).addClass("active");
+  });
+
 });

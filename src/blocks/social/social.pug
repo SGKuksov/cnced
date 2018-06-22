@@ -1,0 +1,20 @@
+mixin social()
+
+  section.social
+    .social__container.container
+      .row
+        .col-7
+          h2.social__title
+          .social__links
+            a.social__link.vk-logo(href="#")
+            a.social__link.facebook-logo(href="#")
+            a.social__link.youtube-logo(href="#")
+
+        .col-7.offset-2
+          h2.social__title
+          p.social__text
+
+          form.social__form(action="")
+            input.social__input#socialPhone(type="tel", name="phone")
+            button.social__submit(type="submit")
+

@@ -1,0 +1,51 @@
+.social {
+
+  &__title {
+    color: $red;
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 7;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+  }
+  &__link {
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  &__text {
+
+  }
+
+  &__form  {
+
+  }
+  &__input {
+    width: 306px;
+    margin-right: 72px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    line-height: 26px;
+    box-shadow: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.9rem;
+    letter-spacing: 0.38px;
+  }
+  &__submit  {
+    border: none;
+    box-shadow: none;
+    height: 48px;
+    border-radius: 48px;
+    line-height: 26px;
+    min-width: 300px;
+    box-shadow: 0 6px 20px 4px rgba($color: #000000, $alpha: 0.24);
+    background: #f8f8f6;
+    color: $red;
+    letter-spacing: 0.09px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}

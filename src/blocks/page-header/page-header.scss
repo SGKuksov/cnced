@@ -37,6 +37,16 @@
     font-size: 1.4rem;
     line-height: 44px;
   }
+  &__compare {
+    text-align: center;
+    display: inline-block;
+    line-height: 44px;
+    padding-top: 6px;
+
+    & i {
+      display: inline-block;
+    }
+  }
 
   &__order {
     color: #ffffff;
@@ -56,6 +66,12 @@
     &:focus {
       box-shadow: 0 0 0 1px rgb(77, 144, 254);
     }
+  }
+
+  &__order-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 16px;
   }
 
   &__logo {
@@ -91,7 +107,7 @@
     & button {
       width: 20px;
       height: 20px;
-      // border: none;
+      border: none;
       box-shadow: none;
       background-color: transparent;
     }

@@ -13,10 +13,10 @@ mixin page-header()
           button.btn.page-header__callback Перезвонить?
 
         a.col-1.page-header__compare(href="#")
-          svg(width="20" height="20")
+          i.compare-icon
 
         a.col-3.page-header__order(href="#")
-          svg(width="20" height="20")
+          i.page-header__order-icon.delivery-truck--white
           | Оформить заказ
 
       .page-header__bottom-head.row
@@ -36,7 +36,6 @@ mixin page-header()
 
         form.offset-4.col-2.page-header__search(action="#")
           input.page-header__input(type="search" placeholder="Поиск")
-          button(type="submit")
-            svg(width="20" height="20")
+          button.loup-icon(type="submit")
 
     +promo()
