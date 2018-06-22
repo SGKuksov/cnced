@@ -1,0 +1,87 @@
+.map {
+
+
+  &__container {
+    position: relative;
+  }
+  &__info  {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 670px;
+    padding-top: 107px;
+
+    z-index: 2;
+
+    &.red-circle {
+      background-image: url("../img/bg_red_circle.svg");
+      background-repeat: no-repeat;
+      background-position: -647px -882px;
+    }
+  }
+  &__title {
+    margin-bottom: 58px;
+    font-size: 3.2rem;
+    color: #ffffff;
+    line-height: 40px;
+    letter-spacing: 0.16px;
+  }
+  &__text  {
+    margin-bottom: 47px;
+    letter-spacing: 0.36px;
+    line-height: 26px;
+    font-size: 1.8rem;
+    color: #ffffff;
+  }
+  &__address {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 17px;
+    display: block;
+  }
+  &__metro {
+    display: block;
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 0.28px;
+    line-height: 22px;
+    margin-bottom: 75px;
+  }
+  &__form  {
+
+  }
+  &__input {
+    width: 306px;
+    margin-right: 72px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    line-height: 26px;
+    box-shadow: none;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1.9rem;
+    letter-spacing: 0.38px;
+  }
+  &__submit  {
+    border: none;
+    box-shadow: none;
+    height: 48px;
+    border-radius: 48px;
+    line-height: 26px;
+    min-width: 300px;
+    box-shadow: 0 6px 20px 4px rgba($color: #000000, $alpha: 0.24);
+    background: #f8f8f6;
+    color: $red;
+    letter-spacing: 0.09px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  &__frame {
+    height: 670px;
+    width: 100%;
+  }
+}
+
+

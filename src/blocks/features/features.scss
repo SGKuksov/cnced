@@ -1,0 +1,44 @@
+.features {
+
+  &__container {
+    padding-top: 130px;
+    padding-bottom: 138px;
+  }
+  &__item {
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #484848;
+      box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.04);
+    }
+    &:hover .features__item-title {
+      color: #ffffff;
+    }
+    &:hover .features__item-text {
+      color: #ffffff;
+    }
+  }
+  &__item-icon {
+    height: 24px;
+    width: 42px;
+    background-color: $red;
+    display: inline-block;
+  }
+  &__item-title {
+    margin-top: 35px;
+    font-size: 1.8rem;
+    color: #484848;
+    font-weight: 600;
+    line-height: 22px;
+  }
+  &__item-text {
+    margin-top: 23px;
+    color: #636363;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
