@@ -7,14 +7,9 @@ $(document).ready(function() {
     $(".promo__card-baloon").slideToggle();
   });
 
-
-
-
-
-
-
-
-
-
+  $(".service__faq-title").click(function() {
+    $(this).parent().find(".service__faq-text").slideToggle();
+    $(this).parent().toggleClass("active");
+  });
 
 });
