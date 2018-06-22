@@ -1,0 +1,60 @@
+.popular {
+
+  &__container {
+    padding-top: 161px;
+  }
+  &__row {
+
+  }
+  &__title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #292929;
+    line-height: 7px;
+    margin-bottom: 47px;
+  }
+  &__category-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__category-item {
+    list-style: none;
+    position: relative;
+    margin-left: 32px;
+
+    &--active a {
+      color: $red;
+    }
+
+    &--active:after {
+      content: "";
+      width: 100%;
+      height: 5px;
+      border-radius: 5px;
+      background-color: $red;
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+    }
+  }
+  &__category-link {
+    font-size: 1.9rem;
+    letter-spacing: 0.38px;
+    color: #444444;
+    line-height: 7px;
+
+    &:hover {
+      color: #444444;
+      text-decoration: none;
+    }
+
+    &--all {
+      color: $red;
+    }
+  }
+  &__card {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

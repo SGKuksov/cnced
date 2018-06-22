@@ -3,7 +3,37 @@ mixin promo()
   .promo
     .promo__container.container
       .row
-        h1.promo__title
+        h1.promo__title.col-9
           | Широкий выбор лазерного и фрезерного оборудования, маркеров и комплектующих к ним
+        .promo__card.col-7
+          .promo__card-photo
+            img(src="img/promo-img.png", alt="Wattsan 6040", width="522", height="504")
+            .promo__card-point.promo__card-point-1
+            .promo__card-point.promo__card-point-2
+            .promo__card-point.promo__card-point-3
+            .promo__card-baloon
+              span.promo__card-baloon-desc Мощность
+              span.promo__card-baloon-val 80 Вт
+          .promo__card-meta
+            span.promo__card-type
+              | Лазерный станок
+            span.promo__card-title
+              | Wattsan 6040
+            span.promo__card-price
+              | 290 000 руб.
+            span.promo__card-old-price
+              | 310 000 руб.
+      .row
+        p.promo__dillers.col-9
+          | Официальные диллеры:
+        .promo__dillers-gallery.col-9
+          img(src="img/king-rabbit-logo.png", alt="King Rabbit")
+          img(src="img/reci.png", alt="Reci")
+          img(src="img/lasea-logo.png", alt="Lasea")
+          img(src="img/wattsan-logo.png", alt="Wattsan")
+          img(src="img/s-a.png", alt="s&a")
+          img(src="img/yongli.png", alt="Yongli")
 
-        
+
+
+

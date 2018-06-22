@@ -1,3 +1,109 @@
 .promo {
+  &__container {
+  }
 
+  &__title {
+    margin-top: 130px;
+    font-size: 4rem;
+    line-height: 52px;
+    color: #ffffff;
+  }
+  &__card {
+    position: relative;
+    margin-top: 52px;
+  }
+  &__card-meta {
+    position: absolute;
+    bottom: -12px;
+  }
+  &__card-photo {
+    width: 522px;
+    height: 504px;
+    margin-left: 77px;
+    position: relative;
+  }
+  &__card-type {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $black;
+    opacity: 0.9;
+    display: block;
+  }
+  &__card-title {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: $black;
+    text-transform: uppercase;
+    display: block;
+  }
+  &__card-price {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: $red;
+    display: block;
+  }
+  &__card-old-price {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: $red;
+    display: block;
+    text-decoration: line-through;
+  }
+  &__card-point {
+    background-color: #993131;
+    position: absolute;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #ffffff;
+    z-index: 2;
+    cursor: pointer;
+  }
+  &__card-point-1 {
+    top: 78px;
+    left: 211px;
+  }
+  &__card-point-2 {
+    top: 203px;
+    left: 101px;
+  }
+  &__card-point-3 {
+    top: 275px;
+    left: 439px;
+  }
+  &__card-baloon {
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.04);
+    position: absolute;
+    display: inline-block;
+    padding: 21px;
+    border-radius: 5px;
+    top: 94px;
+    left: 227px;
+  }
+  &__card-baloon-desc {
+    display: block;
+    color: #993131;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  &__card-baloon-val {
+    display: block;
+    font-size: 1.6rem;
+    color: #252525;
+  }
+  &__dillers {
+    color: $black;
+    font-size: 1.6rem;
+    margin-top: -34px;
+    margin-bottom: 25px;
+  }
+  &__dillers-gallery {
+    display: block;
+
+    img {
+      margin-right: 13px;
+    }
+  }
 }

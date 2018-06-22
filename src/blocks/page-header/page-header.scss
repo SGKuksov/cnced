@@ -46,10 +46,15 @@
     background-color: #ac3737;
     border-radius: 44px;
     text-align: center;
+    outline: transparent;
 
     &:hover {
       color: #ffffff;
       text-decoration: none;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px rgb(77, 144, 254);
     }
   }
 

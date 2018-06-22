@@ -1,0 +1,92 @@
+.popular-card {
+  background-color: #fff;
+  box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.02);
+  padding-top: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+
+  &__compare-link {
+    color: $red;
+    font-size: 1.4em;
+    letter-spacing: 0.28px;
+    display: block;
+    text-align: right;
+
+    &:hover {
+      color: $red;
+    }
+  }
+  &__photo {
+    width: 190px;
+    height: 184px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+  &__category {
+    font-size: 1.4rem;
+    color: $red;
+    letter-spacing: 0.28px;
+    line-height: 30px;
+
+    &:hover {
+      color: $red;
+    }
+  }
+  &__title {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    line-height: 30px;
+  }
+  &__description {
+    margin-top: 30px;
+    margin-bottom: 52px;
+    line-height: 18px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #292929;
+  }
+  &__meta {
+    line-height: 22px;
+    color: #292929;
+    font-size: 1.4rem;
+    letter-spacing: 0.28px;
+    margin: 0;
+  }
+  &__meta-title {
+    letter-spacing: 0.28px;
+  }
+  &__meta-separator {
+    color: #cdcdcd;
+    letter-spacing: 0.28px;
+  }
+  &__meta-val {
+
+  }
+  &__footer {
+    margin-top: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__price {
+    font-size: 1.8rem;
+    color: $red;
+    line-height: 17px;
+    letter-spacing: 0.36px;
+    display: inline-block;
+  }
+  &__order {
+    background-color: $red;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    min-width: 60px;
+    // width: 60px;
+    display: inline-block;
+  }
+}
