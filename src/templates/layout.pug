@@ -19,12 +19,15 @@ html(class="no-js  page", lang="ru")
       script.
         document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-  body.red-circle
-    +page-header()
+  body
+    block body
 
-    block content
 
-    +page-footer()
+
+
+
+
+
 
     block page-bottom
       script(src="js/script.min.js")

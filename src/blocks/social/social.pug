@@ -5,6 +5,7 @@ mixin social()
       .row
         .col-7
           h2.social__title
+            | Присоединяйтесь к нам в сети
           .social__links
             a.social__link.vk-logo(href="#")
             a.social__link.facebook-logo(href="#")
@@ -12,9 +13,11 @@ mixin social()
 
         .col-7.offset-2
           h2.social__title
+            | Остались вопросы?
           p.social__text
+            | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, placeat.
 
           form.social__form(action="")
-            input.social__input#socialPhone(type="tel", name="phone")
+            input.social__input#socialPhone(type="tel", name="phone", placeholder="+7 (xxx) xxx-xx-xx")
             button.social__submit(type="submit")
-
+              | Перезвоните мне

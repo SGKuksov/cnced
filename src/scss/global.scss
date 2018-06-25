@@ -1,8 +1,6 @@
 html {
   box-sizing: border-box;
-
   font-size: $font-size;
-  color: $text-color;
 }
 
 * {
@@ -13,8 +11,9 @@ body {
   min-width: 320px;
   margin: 0;
   background-color: $bg;
-  height: 2000px;
   font-family: $font-family;
+  font-size: 1.6rem;
+  color: $text-color;
 }
 
 ul {

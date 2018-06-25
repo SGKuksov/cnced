@@ -1,5 +1,10 @@
 .social {
 
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 84px;
+  }
+
   &__title {
     color: $red;
     font-size: 3.2rem;
