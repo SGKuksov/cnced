@@ -1,0 +1,78 @@
+mixin faq()
+
+  section.faq
+    .faq__container.container
+      .row
+        ul.bread.col-5
+          li.bread__item
+            a.bread__link(href="#") Главная
+          li.bread__item
+            span.bread__link.bread__link--current(href="#") Информация
+
+      .row
+        .faq__sidenav.col-4
+          ul.faq__sidenav-list
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Контакты и реквизиты
+            li.faq__sidenav-item.faq__sidenav-item--active
+              a.faq__sidenav-link(href="#")
+                | Доставка
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Оплата
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Возврат и гарантии
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Обучение
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Комплектующие
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Ремонт и техобслуживание
+
+
+          ul.faq__sidenav-list-2
+            li.faq__sidenav-item
+              h2.faq__sidenav-link(href="#")
+                | Частозадаваемые вопросы:
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Ваши лазерные станки действительно напрямую от производителя?
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Какой лазерный станок или гравер подойдет для домашнего использования?
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Нам необходим лазерный станок в школу. Какой станок посоветуете?
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | На что обращать вниманиепри выборе лазерного станка?
+            li.faq__sidenav-item
+              a.faq__sidenav-link(href="#")
+                | Можно ли приехать и посмотреть лазерный станок в работе?
+            li.faq__sidenav-more
+              a.faq__sidenav-link(href="#")
+                | Смотреть все+
+
+        .faq__content.col-10.offset-1
+          h2.faq__title
+            | Доставка по г. Санкт-Петербург
+          P.faq__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          P.faq__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          P.faq__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+
+          h2.faq__title
+            | Доставка в г. Москва и регионы
+          P.faq__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          .faq__gallery
+            img.faq__gallery-item(src="img/delivers.jpg", alt="Перевозчики")
+          P.faq__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?

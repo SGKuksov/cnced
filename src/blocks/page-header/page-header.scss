@@ -108,10 +108,15 @@
 
     & button {
       width: 20px;
-      height: 20px;
+      height: 27px;
+      padding: 1px;
+      text-align: center;
       border: none;
       box-shadow: none;
       background-color: transparent;
+    }
+    & i {
+      display: inline-block;
     }
   }
 

@@ -1,0 +1,39 @@
+.bread {
+  font-size: 0;
+  margin-bottom: 48px;
+
+  &__item {
+    padding-right: 13px;
+    margin-right: 11px;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+
+    &:after {
+      width: 2px;
+      height: 12px;
+      position: absolute;
+      content: "";
+      background-color: #5e5e5e;
+      bottom: 2px;
+      right: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &:after {
+        background-color: transparent;
+      }
+    }
+  }
+  &__link {
+    color: #5e5e5e;
+    font-size: 1.6rem;
+    line-height: 17px;
+
+    &--current {
+      color: $red;
+    }
+  }
+}
