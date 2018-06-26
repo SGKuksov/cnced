@@ -1,0 +1,24 @@
+.page-header.white {
+  padding-top: 57px;
+  padding-bottom: 28px;
+  background-color: #fff;
+
+  .main-nav:after {
+    background-color: #000;
+  }
+  .main-nav__link {
+    color: #000;
+  }
+  .page-header__phone {
+    color: #000;
+  }
+  .page-header__callback {
+    color: #000;
+  }
+  .page-header__category-link {
+    color: #050505;
+  }
+  .page-header__input {
+    color: #050505;
+  }
+}
