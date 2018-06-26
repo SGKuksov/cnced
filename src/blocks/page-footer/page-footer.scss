@@ -1,3 +1,102 @@
 .page-footer {
+  background-color: #484848;
 
+  &__container {
+    padding-top: 62px;
+    padding-bottom: 47px;
+  }
+  &__logo {
+    width: 228px;
+    height: 68px;
+  }
+  &__nav {
+
+  }
+  &__title {
+    display: block;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 23px;
+    color: #ffffff;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 75%;
+      height: 1px;
+      background-color: #e8e8e8;
+      opacity: 0.25;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__list {
+
+  }
+  &__item {
+    list-style: none;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #ffffff;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  &__contacts {
+
+  }
+  &__phone {
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+
+    & + span {
+      font-size: 1.8rem;
+      color: #ffffff;
+      font-weight: 300;
+    }
+  }
+  &__mails {
+
+  }
+  &__mail {
+    display: block;
+    color: #d24a43;
+    font-size: 1.8rem;
+    line-height: 40px;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: #d24a43;
+    }
+  }
+  &__bottom {
+    padding-top: 10px;
+  }
+  &__copy {
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 20px;
+  }
+  &__right {
+    color: #ffffff;
+    font-size: 1.8rem;
+    line-height: 20px;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
 }
+
+

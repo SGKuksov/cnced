@@ -1,5 +1,45 @@
 mixin page-footer()
 
   footer.page-footer
-    .page-footer__container
-      
+    .page-footer__container.container
+      .row
+        .page-footer__logo.col-5
+          img(src="img/cnced-logo-black(1).png", alt="CNCED", width="228", height="68")
+        .page-footer__nav.col-4
+          span.page-footer__title
+            | Доставка и оплата
+          ul.page-footer__list
+            li.page-footer__item
+              a.page-footer__link(href="#") Сервис
+            li.page-footer__item
+              a.page-footer__link(href="#") Статьи
+            li.page-footer__item
+              a.page-footer__link(href="#") Реквизиты
+        .page-footer__contacts.col-4
+          span.page-footer__title
+            | Контакты
+          ul.page-footer__list
+            li.page-footer__item
+              a.page-footer__phone(href="tel:88007771787") 8 (800) 777-17-87
+              span  (для регионов)
+            li.page-footer__item
+              a.page-footer__phone(href="tel:+78123099804") +7 (812) 309-98-04
+              span  (СПб)
+            li.page-footer__item
+              a.page-footer__phone(href="tel:+74952681299") +7 (495) 268-12-99
+              span  (Мск)
+            li.page-footer__item
+              a.page-footer__phone(href="tel:+78612034704") +7 (861) 203-47-04
+              span  (Краснодар)
+        .page-footer__mails.col-3
+          span.page-footer__title
+            | По вопросам
+          a.page-footer__mail(href="mailto:info@lasercut.ru") info@lasercut.ru
+          span.page-footer__title
+            | Техническая поддержка
+          a.page-footer__mail(href="mailto:help@lasercut.ru") help@lasercut.ru
+      .row
+        .page-footer__bottom.col-6
+          p.page-footer__copy © 2007 - 2018 «LaserCut»
+          a.page-footer__right(href="#") Условия размещения информации на сайте
+

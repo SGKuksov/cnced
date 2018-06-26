@@ -1,4 +1,16 @@
 .main-nav {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 755px;
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+    left: 15px;
+    bottom: 0;
+  }
 
   &__list {
     display: flex;
