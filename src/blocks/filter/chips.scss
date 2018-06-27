@@ -1,0 +1,46 @@
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 550px;
+
+  &__item {
+    border-radius: 4px;
+    background-color: #555555;
+    padding-left: 12px;
+    padding-right: 12px;
+    list-style: none;
+    margin-right: 12px;
+    margin-bottom: 12px;
+
+    &.reset {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
+  &__link {
+    font-size: 1.4rem;
+    line-height: 28px;
+    color: #ffffff;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+  &__remove {
+    font-size: 1.4rem;
+    line-height: 17px;
+    color: #ffffff;
+    margin-left: 12px;
+    cursor: pointer;
+  }
+  &__reset {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    line-height: 17px;
+    color: $red;
+
+    &:hover {
+      color: $red;
+    }
+  }
+}

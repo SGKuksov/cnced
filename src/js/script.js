@@ -12,9 +12,22 @@ $(document).ready(function() {
     $(this).parent().toggleClass("active");
   });
 
+  $(".sort__item").click(function() {
+    if ( $(this).hasClass("active") && !$(this).hasClass("disabled")) {
+      $(this).toggleClass("reverse");
+    } else {
+      $(".sort__item").removeClass("active");
+      $(this).toggleClass("active");
+    }
+  });
+
   $(".features__item").mouseover(function() {
     $(".features__item").removeClass("active");
     $(this).addClass("active");
+  });
+
+  $(".chips__remove").click(function() {
+    $(this).parent().remove();
   });
 
   $( "#slider-range" ).slider({
@@ -67,7 +80,6 @@ $(document).ready(function() {
     keyChar=String.fromCharCode(key);
 
     if(!/\d/.test(keyChar))	return false;
-
   });
 
 

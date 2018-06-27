@@ -23,7 +23,7 @@
     display: inline-block;
   }
   &__type-link {
-    color: #f8f8f6;
+    color: #ffffff;
     border: 2px solid $red;
     height: 47px;
     padding-left: 20px;
@@ -34,7 +34,18 @@
     font-size: 2rem;
 
     &:hover {
-      color: #f8f8f6;
+      color: #ffffff;
+      background-color:  rgba($color: $red, $alpha: 0.5);
+      border: 2px solid rgba($color: $red, $alpha: 0.5);
+    }
+    &:active {
+      color: #ffffff;
+      background-color: rgba($color: $red, $alpha: 0.5);
+      border: 2px solid rgba($color: $red, $alpha: 0.5);
+    }
+    &.disabled {
+      color: #a6a6a6;
+      border: 2px solid #d0d0d0;
     }
   }
 

@@ -37,7 +37,6 @@
     }
   }
 
-  //
   &__content {
     margin-left: 39px;
   }
@@ -45,15 +44,11 @@
     margin-right: -66px;
   }
   &__title {
-    font-size: 2rem;
-    color: #252525;
-    line-height: 17px;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #292929;
+    line-height: 1;
     margin: 0;
-    margin-bottom: 30px;
-    margin-top: 96px;
-
-    &:first-child {
-      margin-top: 0;
-    }
+    margin-bottom: 24px;
   }
 }
