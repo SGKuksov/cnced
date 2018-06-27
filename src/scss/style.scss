@@ -51,8 +51,6 @@
 
 // jquery-ui
 // @import "jquery-ui";
-@import 'slider';
-@import 'theme';
 
 // Растровый спрайт: примеси-генераторы правил
 @import 'src/blocks/sprite-png/sprite-png';
@@ -76,3 +74,6 @@
 @import 'src/blocks/faq/faq';
 @import 'src/blocks/bread/bread';
 @import 'src/blocks/catalog/catalog';
+@import 'src/blocks/range-slider/slider';
+@import 'src/blocks/range-slider/theme';
+@import 'src/blocks/range-slider/range-slider';

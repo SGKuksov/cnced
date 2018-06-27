@@ -11,36 +11,22 @@ mixin catalog()
 
       .row
         .catalog__sidenav.col-4
-          .catalog__sidenav-block
+          .catalog__sidenav-block.range-slider
+            label.range-slider__label(for="amount") Цена
             p
-              label(for="amount") Price range:
-              input(type="text", id="amount", readonly, style="border:0; color:#f6931f; font-weight:bold;")
-            div(id="slider-range")
+              input.range-slider__input(type="text", id="amount")
+              |  руб
+              span —
+              input.range-slider__input(type="text", id="amount_1")
+              |  руб
+            div.range-slider__line(id="slider-range")
 
-
-
-          ul.catalog__sidenav-list-2
-            li.catalog__sidenav-item
-              h2.catalog__sidenav-link(href="#")
-                | Частозадаваемые вопросы:
-            li.catalog__sidenav-item
-              a.catalog__sidenav-link(href="#")
-                | Ваши лазерные станки действительно напрямую от производителя?
-            li.catalog__sidenav-item
-              a.catalog__sidenav-link(href="#")
-                | Какой лазерный станок или гравер подойдет для домашнего использования?
-            li.catalog__sidenav-item
-              a.catalog__sidenav-link(href="#")
-                | Нам необходим лазерный станок в школу. Какой станок посоветуете?
-            li.catalog__sidenav-item
-              a.catalog__sidenav-link(href="#")
-                | На что обращать вниманиепри выборе лазерного станка?
-            li.catalog__sidenav-item
-              a.catalog__sidenav-link(href="#")
-                | Можно ли приехать и посмотреть лазерный станок в работе?
-            li.catalog__sidenav-more
-              a.catalog__sidenav-link(href="#")
-                | Смотреть все+
+          .catalog__sidenav-block
+          .catalog__sidenav-block
+          .catalog__sidenav-block
+          .catalog__sidenav-block
+          .catalog__sidenav-block
+          .catalog__sidenav-block
 
         .catalog__content.col-10.offset-1
           h2.catalog__title
