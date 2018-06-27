@@ -1,0 +1,62 @@
+mixin catalog()
+
+  section.catalog
+    .catalog__container.container
+      .row
+        ul.bread.col-5
+          li.bread__item
+            a.bread__link(href="#") Главная
+          li.bread__item
+            span.bread__link.bread__link--current(href="#") Каталог
+
+      .row
+        .catalog__sidenav.col-4
+          .catalog__sidenav-block
+            p
+              label(for="amount") Price range:
+              input(type="text", id="amount", readonly, style="border:0; color:#f6931f; font-weight:bold;")
+            div(id="slider-range")
+
+
+
+          ul.catalog__sidenav-list-2
+            li.catalog__sidenav-item
+              h2.catalog__sidenav-link(href="#")
+                | Частозадаваемые вопросы:
+            li.catalog__sidenav-item
+              a.catalog__sidenav-link(href="#")
+                | Ваши лазерные станки действительно напрямую от производителя?
+            li.catalog__sidenav-item
+              a.catalog__sidenav-link(href="#")
+                | Какой лазерный станок или гравер подойдет для домашнего использования?
+            li.catalog__sidenav-item
+              a.catalog__sidenav-link(href="#")
+                | Нам необходим лазерный станок в школу. Какой станок посоветуете?
+            li.catalog__sidenav-item
+              a.catalog__sidenav-link(href="#")
+                | На что обращать вниманиепри выборе лазерного станка?
+            li.catalog__sidenav-item
+              a.catalog__sidenav-link(href="#")
+                | Можно ли приехать и посмотреть лазерный станок в работе?
+            li.catalog__sidenav-more
+              a.catalog__sidenav-link(href="#")
+                | Смотреть все+
+
+        .catalog__content.col-10.offset-1
+          h2.catalog__title
+            | Доставка по г. Санкт-Петербург
+          P.catalog__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          P.catalog__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          P.catalog__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+
+          h2.catalog__title
+            | Доставка в г. Москва и регионы
+          P.catalog__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          .catalog__gallery
+            img.catalog__gallery-item(src="img/delivers.jpg", alt="Перевозчики")
+          P.catalog__text
+            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?

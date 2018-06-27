@@ -46,8 +46,13 @@
 @import 'fonts';
 @import 'global';
 
+// custom grid
+@import 'grid';
+
 // jquery-ui
 // @import "jquery-ui";
+@import 'slider';
+@import 'theme';
 
 // Растровый спрайт: примеси-генераторы правил
 @import 'src/blocks/sprite-png/sprite-png';
@@ -70,3 +75,4 @@
 @import 'src/blocks/last-seen/last-seen-card';
 @import 'src/blocks/faq/faq';
 @import 'src/blocks/bread/bread';
+@import 'src/blocks/catalog/catalog';

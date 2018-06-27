@@ -46,6 +46,7 @@
   "dependencies": {
     "bootstrap": "latest",
     "jquery": "latest",
+    "jquery-ui": "latest",
     "object-fit-images": "latest",
     "slick-carousel": "^1.8.1",
     "svg4everybody": "latest"
