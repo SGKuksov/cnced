@@ -20,8 +20,9 @@
   }
 
   &__sidenav-title {
-    font-size: 1.8rem;
-    color: #252525;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #212121;
   }
   &__sidenav-more {
     list-style: none;
@@ -35,8 +36,13 @@
       text-decoration: underline;
     }
   }
+
+  //
   &__content {
     margin-left: 39px;
+  }
+  &__content-grid {
+    margin-right: -66px;
   }
   &__title {
     font-size: 2rem;

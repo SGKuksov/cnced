@@ -20,6 +20,9 @@ mixin catalog()
               input.range-slider__input(type="text", id="amount_1")
               |  руб
             div.range-slider__line(id="slider-range")
+            .range-slider__meta
+              span.range-slider__min 900 руб
+              span.range-slider__max 850 800 руб
 
           .catalog__sidenav-block
           .catalog__sidenav-block
@@ -28,21 +31,28 @@ mixin catalog()
           .catalog__sidenav-block
           .catalog__sidenav-block
 
-        .catalog__content.col-10.offset-1
+        .catalog__content.col-11.offset-1
           h2.catalog__title
-            | Доставка по г. Санкт-Петербург
-          P.catalog__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
-          P.catalog__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
-          P.catalog__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+            | Что вы ищите?
 
-          h2.catalog__title
-            | Доставка в г. Москва и регионы
-          P.catalog__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
-          .catalog__gallery
-            img.catalog__gallery-item(src="img/delivers.jpg", alt="Перевозчики")
-          P.catalog__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+          +category-panel()
+          +filter()
+
+          .catalog__content-grid.row
+            +card()
+            +card()
+            +card()
+
+            +card()
+            +card()
+            +card()
+
+            +card()
+            +card()
+            +card()
+
+            +card()
+            +card()
+            +card()
+
+          +pagination()
