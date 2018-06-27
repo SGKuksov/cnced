@@ -4,7 +4,7 @@
     padding-top: 39px;
   }
   &__sidenav {
-    width: 322px;
+    width: 326px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -17,13 +17,74 @@
     padding-bottom: 28px;
     padding-right: 27px;
     margin-bottom: 10px;
-  }
 
+    .chips__item:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  &__sidenav-question-block {
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.02);
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    padding-right: 52px;
+  }
+  &__sidenav-question-icon {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  &__sidenav-question-title {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  &__sidenav-question-text {
+    margin: 0;
+    line-height: 26px;
+    color: #595959;
+    font-size: 1.8rem;
+  }
+  &__sidenav-question-link {
+    color: $red;
+
+    &:hover {
+      color: $red;
+    }
+  }
   &__sidenav-title {
+    position: relative;
     font-size: 1.6rem;
     font-weight: 600;
     color: #212121;
+    margin: 0;
+    margin-bottom: 22px;
+    display: block;
+
+    &:after {
+      position: absolute;
+      content: "";
+      border-right: 1px solid #3b3b3b;
+      border-top: 1px solid #3b3b3b;
+      transform: rotate(-45deg);
+      transition: 500ms;
+      height: 10px;
+      width: 10px;
+      right: 0;
+      top: 10px;
+    }
+    &.closed {
+      background-color: #f1f1f1;
+      transition: 500ms;
+    }
+    &.closed .catalog__sidenav-title:after {
+      transform: rotate(135deg);
+      transition: 500ms;
+      top: 0;
+    }
   }
+
   &__sidenav-more {
     list-style: none;
     padding-bottom: 60px;
@@ -36,7 +97,6 @@
       text-decoration: underline;
     }
   }
-
   &__content {
     margin-left: 39px;
   }
@@ -50,5 +110,13 @@
     line-height: 1;
     margin: 0;
     margin-bottom: 24px;
+  }
+  &__description {
+    font-size: 1.8rem;
+    color: #292929;
+    line-height: 26px;
+    margin-bottom: 45px;
+    margin-top: 28px;
+    width: 780px;
   }
 }

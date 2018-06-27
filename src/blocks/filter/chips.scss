@@ -1,16 +1,23 @@
 .chips {
   display: flex;
   flex-wrap: wrap;
-  max-width: 550px;
 
   &__item {
     border-radius: 4px;
-    background-color: #555555;
     padding-left: 12px;
     padding-right: 12px;
     list-style: none;
     margin-right: 12px;
     margin-bottom: 12px;
+    background-color: #f1f1f1;
+
+    &.active {
+      background-color: #555555;
+
+      .chips__link {
+        color: #ffffff;
+      }
+    }
 
     &.reset {
       background-color: transparent;
@@ -20,17 +27,24 @@
   &__link {
     font-size: 1.4rem;
     line-height: 28px;
-    color: #ffffff;
+    color: #2c2c2c;
 
     &:hover {
-      color: #ffffff;
+      color: #2c2c2c;
     }
+  }
+  &__count {
+    font-size: 1rem;
+    line-height: 17px;
+    color: #535353;
+    vertical-align: baseline;
+    margin-left: 10px;
   }
   &__remove {
     font-size: 1.4rem;
     line-height: 17px;
     color: #ffffff;
-    margin-left: 12px;
+    margin-left: 10px;
     cursor: pointer;
   }
   &__reset {

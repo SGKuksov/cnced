@@ -12,6 +12,11 @@ $(document).ready(function() {
     $(this).parent().toggleClass("active");
   });
 
+  // $(".catalog__sidenav-title").click(function() {
+  //   $(this).parent().find(".service__faq-text").slideToggle();
+  //   $(this).parent().toggleClass("active");
+  // });
+
   $(".sort__item").click(function() {
     if ( $(this).hasClass("active") && !$(this).hasClass("disabled")) {
       $(this).toggleClass("reverse");

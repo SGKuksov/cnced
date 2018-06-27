@@ -1,4 +1,4 @@
-mixin catalog()
+mixin catalog-laser()
 
   section.catalog
     .catalog__container.container
@@ -7,7 +7,7 @@ mixin catalog()
           li.bread__item
             a.bread__link(href="#") Главная
           li.bread__item
-            span.bread__link.bread__link--current(href="#") Каталог
+            span.bread__link.bread__link--current(href="#") Лазерные станки
 
       .row
         .catalog__sidenav.col-4
@@ -29,19 +29,7 @@ mixin catalog()
             ul.chips
               li.chips__item
                 a.chips__link(href="#") дерево
-                span.chips__count 12
-              li.chips__item
-                a.chips__link(href="#") картон и бумага
-                span.chips__count 12
-              li.chips__item
-                a.chips__link(href="#") картон и бумага
-                span.chips__count 12
-              li.chips__item
-                a.chips__link(href="#") ткань и мех
-                span.chips__count 12
-              li.chips__item
-                a.chips__link(href="#") картон и бумага
-                span.chips__count 12
+                span.chips__remove x
 
           .catalog__sidenav-block
             h2.catalog__sidenav-title Бренд
@@ -62,9 +50,11 @@ mixin catalog()
 
         .catalog__content.col-11.offset-1
           h1.catalog__title
-            | Что вы ищите?
+            | Лазерные станки СО2
 
-          +category-panel()
+          p.catalog__description
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro magnam dolorum atque illo natus. Officia nihil porro hic dolores distinctio sequi fugit consequuntur nesciunt dicta rerum expedita, iusto illum debitis corporis et neque nemo itaque? Quo dolorem error aut! Neque ratione natus qui molestias culpa sit rem animi veniam?
+          //- +category-panel()
           +filter()
 
           .catalog__content-grid.row
