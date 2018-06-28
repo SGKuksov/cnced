@@ -44,12 +44,13 @@
     "vinyl-buffer": "latest"
   },
   "dependencies": {
-    "bootstrap": "4.1.1",
+    "bootstrap": "latest",
     "jquery": "latest",
+    "jquery-mobile": "latest",
     "jquery-ui": "latest",
     "object-fit-images": "latest",
-    "slick-carousel": "^1.8.1",
+    "slick-carousel": "latest",
     "svg4everybody": "latest",
-    "swiper": "^4.3.3"
+    "swiper": "latest"
   }
 }
