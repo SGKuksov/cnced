@@ -4,9 +4,28 @@ mixin page-header-white()
     .page-header__container.container
       .page-header__top.row
         .page-header__logo.col-2
-          img(src="img/cnced-logo-black.png", alt="cnced")
+          picture
+            source(srcset="img/cnced-logo-red.png"  media="(max-width: 480px)")
+            source(srcset="img/cnced-logo-black.png"   media="(min-width: 481px)")
+            img(srcset="img/cnced-logo-black.png" width="120" height="36" alt="cnced")
 
-        +main-nav()
+        nav.main-nav.page-header__main-nav.col-sm-6
+          ul.main-nav__list
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Доставка и оплата")
+                | Доставка и оплата
+
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Сервис")
+                | Сервис
+
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Статьи")
+                | Статьи
+
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Контакты")
+                | Контакты
 
         .col-4.page-header__contacts
           a.page-header__phone(href="tel:+78123099804") +7 (812) 309-98-04

@@ -87,5 +87,9 @@ $(document).ready(function() {
     if(!/\d/.test(keyChar))	return false;
   });
 
+  var mySwiper = new Swiper ('.popular__card-list', {
+    direction: 'horizontal',
+    loop: true
+  });
 
 });

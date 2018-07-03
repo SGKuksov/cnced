@@ -45,6 +45,9 @@
 // jquery-ui
 // @import "jquery-ui";
 
+// swiper
+@import 'src/scss/swiper/swiper.min.scss';
+
 // Растровый спрайт: примеси-генераторы правил
 @import 'src/blocks/sprite-png/sprite-png';
 @include sprites($spritesheet-sprites); // Генератор селекторов для всех картинок спрайта
@@ -76,3 +79,9 @@
 @import 'src/blocks/filter/chips';
 @import 'src/blocks/category-panel/category-panel';
 @import 'src/blocks/pagination/pagination';
+@import 'src/blocks/cart/cart';
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
+}

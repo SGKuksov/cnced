@@ -3,24 +3,48 @@ mixin page-header()
   header.page-header.red-circle
     .page-header__container.container
       .page-header__top.row
-        .page-header__logo.col-2
-          img(src="img/cnced-logo-black.png", alt="cnced")
+        .menu.d-sm-none.col-sm-1
+          span.menu__line
+          span.menu__line
+          span.menu__line
+        .page-header__logo.col-sm-2
+          picture
+            source(srcset="img/cnced-logo-red.png"  media="(max-width: 480px)")
+            source(srcset="img/cnced-logo-black.png"   media="(min-width: 481px)")
+            img(srcset="img/cnced-logo-black.png" width="120" height="36" alt="cnced")
 
-        +main-nav()
+        nav.main-nav.page-header__main-nav.col-md-6.d-none.d-sm-block
+          ul.main-nav__list
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Доставка и оплата")
+                | Доставка и оплата
 
-        .col-4.page-header__contacts
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Сервис")
+                | Сервис
+
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Статьи")
+                | Статьи
+
+
+            li.main-nav__item
+              a.main-nav__link(href="#", title="Контакты")
+                | Контакты
+
+        .page-header__contacts.col-md-4.d-none.d-sm-block
           a.page-header__phone(href="tel:+78123099804") +7 (812) 309-98-04
           button.btn.page-header__callback Перезвонить?
 
-        a.col-1.page-header__compare(href="#")
+        a.page-header__compare.col-md-1(href="#")
           i.compare-icon
 
-        a.col-3.page-header__order(href="#")
+        a.page-header__order.col-sm-3(href="#")
           i.page-header__order-icon.delivery-truck--white
           | Оформить заказ
 
       .page-header__bottom.row
-        ul.col-sm-10.page-header__category-list
+        ul.page-header__category-list.col-sm-10
           li.page-header__category-item
             a.page-header__category-link(href="#")
               | Лазерные станки
@@ -34,7 +58,7 @@ mixin page-header()
             a.page-header__category-link(href="#")
               | Комплектующие
 
-        form.offset-4.col-2.page-header__search(action="#")
+        form.page-header__search.col-sm-2.offset-4(action="#")
           input.page-header__input(type="search" placeholder="Поиск")
           button.page-header__submit(type="submit")
             i.loup-icon
