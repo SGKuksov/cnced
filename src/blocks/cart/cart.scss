@@ -1,79 +1,22 @@
 .cart {
 
   &__container {
-    padding-top: 39px;
+    // padding-top: 39px;
+  }
+  &__content {
+    // margin-left: 39px;
   }
   &__sidenav {
-    width: 322px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  &__sidenav-list {
-    margin-bottom: 38px;
+    box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.02);
+    padding-left: 38px;
+    padding-right: 40px;
+    padding-top: 45px;
+    padding-bottom: 53px;
     background-color: #fff;
-    box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.02);
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-  &__sidenav-item {
-    list-style: none;
-    padding-left: 25px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    border-bottom: 1px solid #dcdcdc;
-
-    &:last-child {
-      border-bottom: 1px solid transparent;
-    }
-    &--active {
-
-      .cart__sidenav-link {
-        font-weight: 600;
-        color: $red;
-      }
-    }
-  }
-  &__sidenav-link {
-    font-size: 1.8rem;
-    color: #252525;
-  }
-  &__sidenav-list-2 {
-    background-color: #fff;
-    box-shadow: 0 0 18px 1px rgba($color: #000000, $alpha: 0.02);
-
-    .cart__sidenav-item {
-      border-bottom: 1px solid transparent;
-      border-top: 1px solid #dcdcdc;
-
-      &:first-child {
-        border-top: 1px solid transparent;
-      }
-    }
-
-    .cart__sidenav-link {
-      font-size: 1.6rem;
-    }
   }
   &__sidenav-title {
     font-size: 1.8rem;
     color: #252525;
-  }
-  &__sidenav-more {
-    list-style: none;
-    padding-bottom: 60px;
-    padding-left: 25px;
-
-    .cart__sidenav-link {
-      color: $red;
-      font-size: 1.2rem;
-      line-height: 20px;
-      text-decoration: underline;
-    }
-  }
-  &__content {
-    margin-left: 39px;
   }
   &__title {
     font-size: 2rem;
@@ -86,20 +29,5 @@
     &:first-child {
       margin-top: 0;
     }
-  }
-  &__text {
-    font-size: 1.8rem;
-    line-height: 20px;
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  &__gallery {
-    margin-bottom: 40px;
-    margin-top: 36px;
-  }
-
-  &__gallery-item {
-    width: 762px;
-    height: 89px;
   }
 }
