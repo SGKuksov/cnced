@@ -10,69 +10,86 @@ mixin cart()
             span.bread__link.bread__link--current(href="#") Информация
 
       .row
-        .cart__sidenav.col-4
-          ul.cart__sidenav-list
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Контакты и реквизиты
-            li.cart__sidenav-item.cart__sidenav-item--active
-              a.cart__sidenav-link(href="#")
-                | Доставка
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Оплата
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Возврат и гарантии
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Обучение
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Комплектующие
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Ремонт и техобслуживание
+        h1.cart__title Вы выбрали:
 
+      .row
+        .cart__content.col-11
+          .order-card
+            .order-card__content
+              .order-card__photo-wrap
+                img.order-card__photo(src="img/wattsan_6090lt.jpg", alt="WATTSAN 6090 LT.jpg", width="242", height="235")
 
-          ul.cart__sidenav-list-2
-            li.cart__sidenav-item
-              h2.cart__sidenav-link(href="#")
-                | Частозадаваемые вопросы:
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Ваши лазерные станки действительно напрямую от производителя?
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Какой лазерный станок или гравер подойдет для домашнего использования?
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Нам необходим лазерный станок в школу. Какой станок посоветуете?
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | На что обращать вниманиепри выборе лазерного станка?
-            li.cart__sidenav-item
-              a.cart__sidenav-link(href="#")
-                | Можно ли приехать и посмотреть лазерный станок в работе?
-            li.cart__sidenav-more
-              a.cart__sidenav-link(href="#")
-                | Смотреть все+
+              .order-card__info
+                a.order-card__category(href="#")
+                  | Лазерный станок
+                h2.order-card__title
+                  | Wattsan 6090 lt
+                p.order-card__meta
+                  span.order-card__meta-title Мощность:
+                  span.order-card__meta-val 80-90 Вт
+                p.order-card__meta
+                  span.order-card__meta-title Рабочее поле:
+                  span.order-card__meta-val 900х600 см
 
-        .cart__content.col-10.offset-1
-          h2.cart__title
-            | Доставка по г. Санкт-Петербург
-          P.cart__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
-          P.cart__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
-          P.cart__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+            .order-card__sidenav
+              //- button.order-card__erase
 
-          h2.cart__title
-            | Доставка в г. Москва и регионы
-          P.cart__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
-          .cart__gallery
-            img.cart__gallery-item(src="img/delivers.jpg", alt="Перевозчики")
-          P.cart__text
-            | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates sit obcaecati reiciendis excepturi eum labore, temporibus et sunt doloremque beatae ad amet quos at accusamus tenetur! Modi praesentium debitis eos?
+              label(for="sklad")
+                input.order-card__sidenav-radio#sklad(type="radio", name="item1")
+                span.order-card__price 290 000 ₽
+                | со склада
+
+              label(for="zakaz")
+                input.order-card__sidenav-radio#zakaz(type="radio", name="item1")
+                span.order-card__price 270 000 ₽
+                | под заказ
+          .order-card
+            .order-card__content
+              .order-card__photo-wrap
+                img.order-card__photo(src="img/wattsan_6090lt.jpg", alt="WATTSAN 6090 LT.jpg", width="242", height="235")
+
+              .order-card__info
+                a.order-card__category(href="#")
+                  | Лазерный станок
+                h2.order-card__title
+                  | Wattsan 6090 lt
+                p.order-card__meta
+                  span.order-card__meta-title Мощность:
+                  span.order-card__meta-val 80-90 Вт
+                p.order-card__meta
+                  span.order-card__meta-title Рабочее поле:
+                  span.order-card__meta-val 900х600 см
+
+            .order-card__sidenav
+              //- button.order-card__erase
+
+              label(for="sklad")
+                input.order-card__sidenav-radio#sklad(type="radio", name="item1")
+                span.order-card__price 290 000 ₽
+                | со склада
+
+              label(for="zakaz")
+                input.order-card__sidenav-radio#zakaz(type="radio", name="item1")
+                span.order-card__price 270 000 ₽
+                | под заказ
+
+        .cart__sidenav.cart-form.col-5
+          h2.cart-form__total Итого
+            span.cart-form__count 580 000 ₽
+
+          p.cart-form__info
+            | Для оформления заказа оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время:
+
+          input.cart-form__input(type="text", name="lname", placeholder="Фамилия")
+          input.cart-form__input(type="text", name="fname", placeholder="Имя")
+          input.cart-form__input(type="email", name="email", placeholder="email")
+          input.cart-form__input(type="tel", name="phone", placeholder="Номер телефона")
+          label.cart-form__label(for="textarea") + комментарий
+          textarea#textarea.cart-form__textarea(name="text", cols="30", rows="10")
+          label.cart-form__right(for="right")
+            input#right(type="checkbox", name="personal")
+            | Я согласен на обработку
+            a.cart-form__right-link(href="#")
+              | персональных данных
+
+          button.cart-form__btn(type="submit") Оставить заявку

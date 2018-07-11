@@ -1,0 +1,99 @@
+.order-card {
+  padding-left: 32px;
+  padding-top: 37px;
+  padding-bottom: 55px;
+  background-color: #fff;
+  box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.02);
+  display: flex;
+
+  &__content {
+    width: 600px;
+    display: flex;
+    padding-left: 32px;
+    padding-top: 37px;
+    padding-bottom: 55px;
+    padding-right: 32px;
+  }
+  &__sidenav {
+    width: 250px;
+    padding-left: 28px;
+    padding-top: 40px;
+    padding-right: 28px;
+    padding-bottom: 55px;
+  }
+  &__info {
+    width: 300px;
+  }
+  &__sidenav-radio {
+    margin-right: 16px;
+    font-size: 1.4rem;
+
+    span {
+      font-size: 2rem;
+      color: #292929;
+      font-weight: 600;
+    }
+  }
+  &__photo-wrap {
+    margin-top: 3px;
+    margin-right: 38px;
+  }
+  &__photo {
+    width: 242px;
+    height: 235px;
+  }
+
+
+
+
+
+
+
+
+  &__category {
+
+  }
+  &__title {
+
+  }
+  &__description {
+
+  }
+  &__meta {
+
+  }
+  &__meta-title {
+
+  }
+  &__meta-separator {
+
+  }
+  &__meta-val {
+
+  }
+  &__meta {
+
+  }
+  &__meta-title {
+
+  }
+  &__meta-separator {
+
+  }
+  &__meta-val {
+
+  }
+  &__footer {
+
+  }
+  &__price {
+
+  }
+  &__order {
+
+  }
+  &__order-icon {
+
+  }
+
+}

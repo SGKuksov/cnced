@@ -80,8 +80,5 @@
 @import 'src/blocks/category-panel/category-panel';
 @import 'src/blocks/pagination/pagination';
 @import 'src/blocks/cart/cart';
-
-.swiper-container {
-  width: 600px;
-  height: 300px;
-}
+@import 'src/blocks/order-card/order-card';
+@import 'src/blocks/cart-form/cart-form';
