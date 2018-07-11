@@ -1,3 +1,3 @@
-# hot_kupon
+# cnced
 
-Site of coupons aggregator
+E-commerce of industrial equipment
