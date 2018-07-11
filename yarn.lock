@@ -500,7 +500,7 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
-bootstrap@4.1.1:
+bootstrap@latest:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.1.1.tgz#3aec85000fa619085da8d2e4983dfd67cf2114cb"
 
@@ -3351,7 +3351,7 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
-jquery-mobile@^1.5.0-alpha.1:
+jquery-mobile@latest:
   version "1.5.0-alpha.1"
   resolved "https://registry.yarnpkg.com/jquery-mobile/-/jquery-mobile-1.5.0-alpha.1.tgz#2a8410d57f3bdeb7b969de2f4da9dc3906f9919e"
   dependencies:
@@ -5426,7 +5426,7 @@ signal-exit@^3.0.0:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
-slick-carousel@^1.8.1:
+slick-carousel@latest:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
 
@@ -5887,7 +5887,7 @@ svgo@^1.0.0:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
-swiper@^4.3.3:
+swiper@latest:
   version "4.3.3"
   resolved "https://registry.yarnpkg.com/swiper/-/swiper-4.3.3.tgz#92e39c806ead23a18e5c3251dfba1ae9ce76270e"
   dependencies:
