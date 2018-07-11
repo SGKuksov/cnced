@@ -24,25 +24,40 @@ mixin cart()
                   | Лазерный станок
                 h2.order-card__title
                   | Wattsan 6090 lt
+
+                span.order-card__mark
+                  | новинка
                 p.order-card__meta
                   span.order-card__meta-title Мощность:
-                  span.order-card__meta-val 80-90 Вт
+                  span.order-card__meta-val  80-90 Вт
                 p.order-card__meta
                   span.order-card__meta-title Рабочее поле:
-                  span.order-card__meta-val 900х600 см
+                  span.order-card__meta-val  900х600 см
 
             .order-card__sidenav
-              //- button.order-card__erase
+              button.order-card__erase.order-card__erase-icon
 
-              label(for="sklad")
-                input.order-card__sidenav-radio#sklad(type="radio", name="item1")
-                span.order-card__price 290 000 ₽
-                | со склада
+              label.order-card__sidenav-input.radio.radio-danger(for="sklad_1")
+                input.order-card__sidenav-radio#sklad_1(type="radio", name="sidenav-radio-1", checked)
+                label(for="sklad_1")
+                span.order-card__price
+                  | 290 000 ₽
+                span.order-card__price-desc
+                  | со склада
 
-              label(for="zakaz")
-                input.order-card__sidenav-radio#zakaz(type="radio", name="item1")
-                span.order-card__price 270 000 ₽
-                | под заказ
+              label.order-card__sidenav-input.radio.radio-danger(for="zakaz_1")
+                input.order-card__sidenav-radio#zakaz_1(type="radio", name="sidenav-radio-1")
+                label(for="zakaz_1")
+                span.order-card__price 
+                  | 270 000 ₽
+                span.order-card__price-desc
+                  | под заказ
+
+              .order-card__spinner.spinner
+                button.spinner__minus-btn(data-dir="dwn") -
+                input.spinner__count(type="text" value="1" min="1" max="40" disabled)
+                button.spinner__plus-btn(data-dir="up") +
+
           .order-card
             .order-card__content
               .order-card__photo-wrap
@@ -53,25 +68,38 @@ mixin cart()
                   | Лазерный станок
                 h2.order-card__title
                   | Wattsan 6090 lt
+
+
                 p.order-card__meta
                   span.order-card__meta-title Мощность:
-                  span.order-card__meta-val 80-90 Вт
+                  span.order-card__meta-val  80-90 Вт
                 p.order-card__meta
                   span.order-card__meta-title Рабочее поле:
-                  span.order-card__meta-val 900х600 см
+                  span.order-card__meta-val  900х600 см
 
             .order-card__sidenav
-              //- button.order-card__erase
+              button.order-card__erase.order-card__erase-icon
 
-              label(for="sklad")
-                input.order-card__sidenav-radio#sklad(type="radio", name="item1")
-                span.order-card__price 290 000 ₽
-                | со склада
+              label.order-card__sidenav-input.radio.radio-danger(for="sklad_2")
+                input.order-card__sidenav-radio#sklad_2(type="radio", name="sidenav-radio-2", checked)
+                label(for="sklad_2")
+                span.order-card__price
+                  | 290 000 ₽
+                span.order-card__price-desc
+                  | со склада
 
-              label(for="zakaz")
-                input.order-card__sidenav-radio#zakaz(type="radio", name="item1")
-                span.order-card__price 270 000 ₽
-                | под заказ
+              label.order-card__sidenav-input.radio.radio-danger(for="zakaz_2")
+                input.order-card__sidenav-radio#zakaz_2(type="radio", name="sidenav-radio-2")
+                label(for="zakaz_2")
+                span.order-card__price 
+                  | 270 000 ₽
+                span.order-card__price-desc
+                  | под заказ
+
+              .order-card__spinner.spinner
+                button.spinner__minus-btn(data-dir="dwn") -
+                input.spinner__count(type="text" value="1" min="1" max="40" disabled)
+                button.spinner__plus-btn(data-dir="up") +
 
         .cart__sidenav.cart-form.col-5
           h2.cart-form__total Итого
@@ -86,10 +114,18 @@ mixin cart()
           input.cart-form__input(type="tel", name="phone", placeholder="Номер телефона")
           label.cart-form__label(for="textarea") + комментарий
           textarea#textarea.cart-form__textarea(name="text", cols="30", rows="10")
-          label.cart-form__right(for="right")
+          label.cart-form__right.checkbox(for="right")
             input#right(type="checkbox", name="personal")
+            label(for="right")
             | Я согласен на обработку
             a.cart-form__right-link(href="#")
               | персональных данных
 
           button.cart-form__btn(type="submit") Оставить заявку
+
+          <div class="checkbox">
+              <input id="checkbox1" type="checkbox">
+              <label for="checkbox1">
+                  Default
+              </label>
+          </div>

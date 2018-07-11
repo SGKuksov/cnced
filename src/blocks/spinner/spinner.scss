@@ -1,0 +1,47 @@
+.spinner {
+  display: flex;
+  align-items: center;
+
+  &__minus-btn,
+  &__plus-btn,
+  &__count {
+    border: 0;
+    box-shadow: none;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  &__minus-btn {
+    border-width: 1px;
+    border-color: rgb(208, 208, 208);
+    border-style: solid;
+    border-radius: 5px;
+    height: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: block;
+    line-height: 8px;
+  }
+  
+  &__count {
+    width: 35px;
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+  
+  &__plus-btn {
+    display: inline-block;
+    height: 16px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+    background-color: rgb(210, 74, 67);
+    opacity: 0.369;
+    line-height: 8px;
+  }
+}
