@@ -11,9 +11,9 @@
     "start": "./node_modules/.bin/gulp"
   },
   "devDependencies": {
-    "autoprefixer": "latest",
-    "browser-sync": "latest",
-    "css-mqpacker": "latest",
+    "autoprefixer": "^9.0.1",
+    "browser-sync": "^2.24.6",
+    "css-mqpacker": "^7.0.0",
     "del": "latest",
     "gulp": "latest",
     "gulp-cheerio": "latest",
@@ -26,7 +26,7 @@
     "gulp-plumber": "latest",
     "gulp-postcss": "latest",
     "gulp-pug": "latest",
-    "gulp-rename": "latest",
+    "gulp-rename": "^1.4.0",
     "gulp-replace": "latest",
     "gulp-sass": "latest",
     "gulp-sequence": "latest",
@@ -44,7 +44,7 @@
     "vinyl-buffer": "latest"
   },
   "dependencies": {
-    "bootstrap": "latest",
+    "bootstrap": "^4.1.2",
     "jquery": "latest",
     "jquery-mobile": "latest",
     "jquery-ui": "latest",
