@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1530" height="1530" viewBox="0 0 1530 1530">
+<defs>
+<path id="efrva" d="M354-580c422.5 0 765 342.5 765 765S776.5 950 354 950s-765-342.5-765-765 342.5-765 765-765z"/>
+<radialGradient id="efrvb" cx="354" cy="950" r="1530" gradientUnits="userSpaceOnUse">
+<stop offset="0" stop-color="#ac3737"/>
+<stop offset="1" stop-color="#8c2d2d"/>
+</radialGradient>
+</defs>
+<g>
+<g transform="translate(411 580)">
+<use fill="url(#efrvb)" xlink:href="#efrva"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Cart</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    </script>
+</head>
+
+<body>
+    <header class="page-header white">
+        <div class="page-header__container container">
+            <div class="page-header__top row">
+                <div class="page-header__logo col-2">
+                    <picture>
+                        <source srcset="img/cnced-logo-red.png" media="(max-width: 480px)" />
+                        <source srcset="img/cnced-logo-black.png" media="(min-width: 481px)" /><img srcset="img/cnced-logo-black.png" width="120" height="36" alt="cnced" /></picture>
+                </div>
+                <nav class="main-nav page-header__main-nav col-sm-6">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a class="main-nav__link" href="#" title="Доставка и оплата">Доставка и оплата</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#" title="Сервис">Сервис</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#" title="Статьи">Статьи</a></li>
+                        <li class="main-nav__item"><a class="main-nav__link" href="#" title="Контакты">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="col-4 page-header__contacts"><a class="page-header__phone" href="tel:+78123099804">+7 (812) 309-98-04</a><button class="btn page-header__callback">Перезвонить?</button></div><a class="col-1 page-header__compare" href="#"><i class="compare-icon"></i></a><a class="col-3 page-header__order"
+                    href="#"><i class="page-header__order-icon delivery-truck--white"></i>Оформить заказ</a></div>
+            <div class="page-header__bottom row">
+                <ul class="col-10 page-header__category-list">
+                    <li class="page-header__category-item"><a class="page-header__category-link" href="#">Лазерные станки</a></li>
+                    <li class="page-header__category-item"><a class="page-header__category-link" href="#">Лазерные маркеры</a></li>
+                    <li class="page-header__category-item"><a class="page-header__category-link" href="#">Фрезерные станки</a></li>
+                    <li class="page-header__category-item"><a class="page-header__category-link" href="#">Комплектующие</a></li>
+                </ul>
+                <form class="offset-4 col-2 page-header__search" action="#"><input class="page-header__input" type="search" placeholder="Поиск" /><button class="page-header__submit" type="submit"><i class="loup-icon"></i></button></form>
+            </div>
+        </div>
+    </header>
+    <section class="cart">
+        <div class="cart__container container">
+            <div class="row">
+                <ul class="bread col-5">
+                    <li class="bread__item"><a class="bread__link" href="#">Главная</a></li>
+                    <li class="bread__item"><span class="bread__link bread__link--current" href="#">Информация</span></li>
+                </ul>
+            </div>
+            <div class="row">
+                <h1 class="cart__title">Вы выбрали:</h1>
+            </div>
+            <div class="row">
+                <div class="cart__content col-11">
+                    <div class="order-card">
+                        <div class="order-card__content">
+                            <div class="order-card__photo-wrap"><img class="order-card__photo" src="img/wattsan_6090lt.jpg" alt="WATTSAN 6090 LT.jpg" width="242" height="235" /></div>
+                            <div class="order-card__info"><a class="order-card__category" href="#">Лазерный станок</a>
+                                <h2 class="order-card__title">Wattsan 6090 lt</h2><span class="order-card__mark">новинка</span>
+                                <p class="order-card__meta"><span class="order-card__meta-title">Мощность:</span><span class="order-card__meta-val"> 80-90 Вт</span></p>
+                                <p class="order-card__meta"><span class="order-card__meta-title">Рабочее поле:</span><span class="order-card__meta-val"> 900х600 см</span></p>
+                            </div>
+                        </div>
+                        <div class="order-card__sidenav"><button class="order-card__erase order-card__erase-icon"></button><label class="order-card__sidenav-input radio radio-danger" for="sklad_1"><input class="order-card__sidenav-radio" id="sklad_1" type="radio" name="sidenav-radio-1" checked="checked"/><label for="sklad_1"></label>
+                            <span
+                                class="order-card__price">290 000 ₽</span><span class="order-card__price-desc">со склада</span></label><label class="order-card__sidenav-input radio radio-danger" for="zakaz_1"><input class="order-card__sidenav-radio" id="zakaz_1" type="radio" name="sidenav-radio-1"/><label for="zakaz_1"></label>
+                                <span
+                                    class="order-card__price"> 270 000 ₽</span><span class="order-card__price-desc">под заказ</span></label>
+                                    <div class="order-card__spinner spinner"><button class="spinner__minus-btn" data-dir="dwn">-</button><input class="spinner__count" type="text" value="1" min="1" max="40" disabled="disabled" /><button class="spinner__plus-btn" data-dir="up">+</button></div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="order-card__content">
+                            <div class="order-card__photo-wrap"><img class="order-card__photo" src="img/wattsan_6090lt.jpg" alt="WATTSAN 6090 LT.jpg" width="242" height="235" /></div>
+                            <div class="order-card__info"><a class="order-card__category" href="#">Лазерный станок</a>
+                                <h2 class="order-card__title">Wattsan 6090 lt</h2>
+                                <p class="order-card__meta"><span class="order-card__meta-title">Мощность:</span><span class="order-card__meta-val"> 80-90 Вт</span></p>
+                                <p class="order-card__meta"><span class="order-card__meta-title">Рабочее поле:</span><span class="order-card__meta-val"> 900х600 см</span></p>
+                            </div>
+                        </div>
+                        <div class="order-card__sidenav"><button class="order-card__erase order-card__erase-icon"></button><label class="order-card__sidenav-input radio radio-danger" for="sklad_2"><input class="order-card__sidenav-radio" id="sklad_2" type="radio" name="sidenav-radio-2" checked="checked"/><label for="sklad_2"></label>
+                            <span
+                                class="order-card__price">290 000 ₽</span><span class="order-card__price-desc">со склада</span></label><label class="order-card__sidenav-input radio radio-danger" for="zakaz_2"><input class="order-card__sidenav-radio" id="zakaz_2" type="radio" name="sidenav-radio-2"/><label for="zakaz_2"></label>
+                                <span
+                                    class="order-card__price"> 270 000 ₽</span><span class="order-card__price-desc">под заказ</span></label>
+                                    <div class="order-card__spinner spinner"><button class="spinner__minus-btn" data-dir="dwn">-</button><input class="spinner__count" type="text" value="1" min="1" max="40" disabled="disabled" /><button class="spinner__plus-btn" data-dir="up">+</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__sidenav cart-form col-5">
+                    <h2 class="cart-form__total">Итого<span class="cart-form__count">580 000 ₽</span></h2>
+                    <p class="cart-form__info">Для оформления заказа оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время:</p><input class="cart-form__input" type="text" name="lname" placeholder="Фамилия" /><input class="cart-form__input" type="text"
+                        name="fname" placeholder="Имя" /><input class="cart-form__input" type="email" name="email" placeholder="email" /><input class="cart-form__input" type="tel" name="phone" placeholder="Номер телефона" /><label class="cart-form__label"
+                        for="textarea">+ комментарий</label><textarea class="cart-form__textarea" id="textarea" name="text" cols="30" rows="10"></textarea><label class="cart-form__right checkbox" for="right"><input id="right" type="checkbox" name="personal"/><label for="right"></label>Я
+                    согласен на обработку<a class="cart-form__right-link" href="#">персональных данных</a></label><button class="cart-form__btn" type="submit">Оставить заявку</button>
+                    <div class="checkbox">
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1"><Default></Default></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features__container container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="features__item"><i class="features__item-icon delivery-truck"></i>
+                        <h3 class="features__item-title">Быстрая доставка</h3>
+                        <p class="features__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, reprehenderit!</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="features__item"><i class="features__item-icon delivery-truck"></i>
+                        <h3 class="features__item-title">Быстрая доставка</h3>
+                        <p class="features__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, reprehenderit!</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="features__item"><i class="features__item-icon delivery-truck"></i>
+                        <h3 class="features__item-title">Быстрая доставка</h3>
+                        <p class="features__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, reprehenderit!</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="features__item active"><i class="features__item-icon delivery-truck"></i>
+                        <h3 class="features__item-title">Быстрая доставка</h3>
+                        <p class="features__item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, reprehenderit!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="social">
+        <div class="social__container container">
+            <div class="row">
+                <div class="col-7">
+                    <h2 class="social__title">Присоединяйтесь к нам в сети</h2>
+                    <div class="social__links"><a class="social__link vk-logo" href="#"></a><a class="social__link facebook-logo" href="#"></a><a class="social__link youtube-logo" href="#"></a></div>
+                </div>
+                <div class="col-7 offset-2">
+                    <h2 class="social__title">Остались вопросы?</h2>
+                    <p class="social__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quibusdam </p>
+                    <form class="social__form" action=""><input class="social__input" id="socialPhone" type="tel" name="phone" placeholder="+7 (xxx) xxx-xx-xx" /><button class="social__submit" type="submit">Перезвоните мне</button></form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="page-footer__container container">
+            <div class="row">
+                <div class="page-footer__logo col-5"><img src="img/cnced-logo-black(1).png" alt="CNCED" width="228" height="68" /></div>
+                <div class="page-footer__nav col-4"><span class="page-footer__title">Доставка и оплата</span>
+                    <ul class="page-footer__list">
+                        <li class="page-footer__item"><a class="page-footer__link" href="#">Сервис</a></li>
+                        <li class="page-footer__item"><a class="page-footer__link" href="#">Статьи</a></li>
+                        <li class="page-footer__item"><a class="page-footer__link" href="#">Реквизиты</a></li>
+                    </ul>
+                </div>
+                <div class="page-footer__contacts col-4"><span class="page-footer__title">Контакты</span>
+                    <ul class="page-footer__list">
+                        <li class="page-footer__item"><a class="page-footer__phone" href="tel:88007771787">8 (800) 777-17-87</a><span> (для регионов)</span></li>
+                        <li class="page-footer__item"><a class="page-footer__phone" href="tel:+78123099804">+7 (812) 309-98-04</a><span> (СПб)</span></li>
+                        <li class="page-footer__item"><a class="page-footer__phone" href="tel:+74952681299">+7 (495) 268-12-99</a><span> (Мск)</span></li>
+                        <li class="page-footer__item"><a class="page-footer__phone" href="tel:+78612034704">+7 (861) 203-47-04</a><span> (Краснодар)</span></li>
+                    </ul>
+                </div>
+                <div class="page-footer__mails col-3"><span class="page-footer__title">По вопросам</span><a class="page-footer__mail" href="mailto:info@lasercut.ru">info@lasercut.ru</a><span class="page-footer__title">Техническая поддержка</span><a class="page-footer__mail" href="mailto:help@lasercut.ru">help@lasercut.ru</a></div>
+            </div>
+            <div class="row">
+                <div class="page-footer__bottom col-6">
+                    <p class="page-footer__copy">© 2007 - 2018 «LaserCut»</p><a class="page-footer__right" href="#">Условия размещения информации на сайте</a></div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.min.js"></script>
+</body>
+
+</html>
